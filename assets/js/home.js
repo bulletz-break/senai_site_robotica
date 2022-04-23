@@ -3,8 +3,10 @@ let image = new Array(6);
 let image_showed = new Array(6);
 
 window.onload = function() {
-    for(i=0; i < image.length; i++)
+    for(i=0; i < image.length; i++) {
         image[i] = document.querySelector(`#home_presentation_ilustration_image_${i+1}`).getBoundingClientRect();
+        image[i].style = 'opacity: 0;'
+    }
 
     console.log(image);
 
