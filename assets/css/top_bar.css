@@ -1,0 +1,97 @@
+/* -------------------------------------------------------------------------------- */
+/* Fontes externas */
+/* Arimo */
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+/* -------------------------------------------------------------------------------- */
+/* Estilização */
+/* Menu no topo da página (top_bar) */
+#top_bar {
+    width: 100%;
+    padding: 0% 2.5%;
+    margin-bottom: 40px;
+}
+
+#top_bar_logo {
+    flex-grow: 10;
+    height: 100px;
+}
+
+#top_bar_logo_img {
+    max-height: 150px;
+    max-width: 150px;
+}
+
+/* Classes */
+.top_bar_list {
+    display: flex;
+    align-items: center;
+}
+
+.top_bar_item {
+    flex-grow: 1;
+}
+
+.top_bar_sn_container {
+    padding-top: 8px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    margin: auto;
+    transition: .2s;
+}
+
+.top_bar_sn_container:hover {
+    background-color: #4B0082;
+}
+
+.top_bar_sn_container:hover .top_bar_sn_svg path {
+    fill: whitesmoke;
+}
+
+/* SVG */
+.top_bar_sn_svg {
+    width: 2em;
+    height: 2em;
+}
+
+.top_bar_sn_svg path,
+.top_bar_sn_svg polygon,
+.top_bar_sn_svg rect {
+    fill: #4B0082;
+}
+
+.top_bar_sn_svg circle {
+    stroke: #4B0082;
+    stroke-width: 1;
+}
+
+/* -------------------------------------------------------------------------------- */
+/* Acesso rápido à outras páginas (top_bar_pages) */
+#top_bar_pages {
+    display: none;
+    justify-content: flex-end;
+}
+
+/* Classes */
+.top_bar_pages_item {
+    transition: .2s;
+    flex-grow: 0;
+    margin: .7% 3%;
+    width: 5%;
+}
+
+.top_bar_pages_item:hover {
+    background-color: #4B0082;
+}
+
+.top_bar_pages_item:hover .top_bar_pages_link {
+    color: white;
+}
+
+.top_bar_pages_link {
+    font-family: 'Arimo';
+    font-size: 1.1em;
+    color: #4B0082;
+}
