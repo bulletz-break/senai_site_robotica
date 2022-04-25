@@ -94,11 +94,6 @@
     padding: 2%;
 }
 
-.home_presentation_item_iframe {
-    padding-right: 2%;
-    width: 100%;
-}
-
 .home_presentation_topicitem {
     padding: 1.5%;
 }
@@ -237,10 +232,6 @@
         height: 700px;
     }
 
-    .home_presentation_iframe_container {
-        width: 420px;
-    }
-
     .home_presentation_text {
         padding-left: 4%;
         font-size: 1.1em;
@@ -261,10 +252,6 @@
     .home_presentation_video {
         height: 610px;
     }
-
-    .home_presentation_iframe_container {
-        width: 330px;
-    }
 }
 
 /* 320px */
@@ -281,10 +268,6 @@
 
     .home_presentation_video {
         height: 540px;
-    }
-
-    .home_presentation_iframe_container {
-        width: 310px;
     }
 }
 
