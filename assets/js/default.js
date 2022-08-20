@@ -9,7 +9,7 @@ function $() {
         $_content_already_loaded = false;
         $_cnt_load_request = new XMLHttpRequest();
         $_cnt_load_request.onloadend = () => content_loaded($_cnt_load_request, $_load_elmnt_replace);
-        $_cnt_load_request.open('post', `../${$_load_file}`, true);
+        $_cnt_load_request.open('post', `./${$_load_file}`, true);
         $_cnt_load_request.send();
         return true;
     }
