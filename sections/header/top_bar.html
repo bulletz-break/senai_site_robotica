@@ -1,33 +1,47 @@
 <nav id="top_bar" class="navbar px-5 w-100">
-    <ul id="top_bar_list" class="d-inline-flex align-items-center container-fluid">
+    <ul id="top_bar_list" class="d-inline-flex align-items-end container-fluid row">
         <!-- Logotipo -->
-        <li class="container w-25" style="align-self: flex-start; justify-self: flex-end;">
+        <li class="container col-3 p-0">
             <a class="navbar-brand" href="home.html">
-                <img id="top_bar_logo_image" src="assets/imagens/cybers_logo.svg" alt="Logo da equipe Cyber-S Senai" />
+                <img id="top_bar_logo_image" src="assets/imagens/cybers_logo.svg" alt="Logo da equipe Cyber-S Senai" style="width: 45%; height: 45%;"  />
             </a>
         </li>
-
-        <li class="dropdown w-75" style="align-self: flex-end; justify-self: flex-end;">
-            <div id="top_bar_teams">
-                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown">
+        <!-- Equipes -->
+        <li class="col-6 p-0 d-flex">
+            <div class="dropdown col-4">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Equipes
                 </button>
-    
-                <ul class="dropdown-menu">
+                <ul class="dropdown-menu row">
                     <li>
-                        <a href="#" class="dropdown-item"> Organização e Método </a>
+                        <a class="dropdown-item" href="#"> Organização e Método </a>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-item"> Engenharia </a>
+                        <a class="dropdown-item" href="#"> Engenharia </a>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-item"> Mérito científico </a>
+                        <a class="dropdown-item" href="#"> Mérito Científico </a>
                     </li>
                     <li>
-                        <a href="#" class="dropdown-item"> Técnico </a>
+                        <a class="dropdown-item" href="#"> Técnico </a>
                     </li>
                 </ul>
             </div>
+            <div class="dropdown col-4">
+                <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Patrocinadores
+                </button>
+                <ul class="dropdown-menu row justify-content-center align-items-center">
+                    <li>
+                        <a class="dropdown-item" href="#"> Audaz Global </a>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="col-3">
+            <div class="bi bi-facebook"></div>
+            <div class="bi bi-instagram"></div>
+            <div class="bi bi-tiktok"></div>
         </li>
     </ul>
 </nav>
@@ -35,15 +49,15 @@
 
 
 <!-- <header class="p-3 text-bg-dark">
-    <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+    <div class="col"4class="container">
+        <div class="col"4class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
             <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
                 <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
                     <use xlink:href="#bootstrap"></use>
                 </svg>
             </a>
 
-            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <ul class="nav col-4 p-02 col-4 p-0g-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                 <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
                 <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
@@ -51,15 +65,15 @@
                 <li><a href="#" class="nav-link px-2 text-white">About</a></li>
             </ul>
 
-            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <form class="col-4 p-02 col-4 p-0g-auto mb-3 mb-lg-0 me-lg-3" role="search">
                 <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..."
                     aria-label="Search">
             </form>
 
-            <div class="text-end">
+            <div class="col"4class="text-end">
                 <button type="button" class="btn btn-outline-light me-2">Login</button>
                 <button type="button" class="btn btn-warning">Sign-up</button>
-            </div>
-        </div>
-    </div>
+            </div class="col"4
+        </div class="col"4
+    </div class="col"4
 </header> -->
