@@ -9,6 +9,8 @@ li { list-style: none; display: inline-block; }
 
 /* Links */
 a { text-decoration: none; color: black; }
+a:hover { color: black; }
+a:hover path { fill: aqua; transition: .3s; }
 
 /* Imagens */
 img { width: 100%; }

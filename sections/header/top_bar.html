@@ -1,13 +1,13 @@
-<nav id="top_bar" class="navbar px-5 w-100">
-    <ul id="top_bar_list" class="d-inline-flex align-items-end container-fluid row">
+<nav id="top_bar" class="navbar p-3 w-100 bg-primary">
+    <ul id="top_bar_list" class="d-inline-flex align-items-stretch container-fluid row">
         <!-- Logotipo -->
-        <li class="container col-3 p-0">
+        <li class="container col-3 p-0 align-items-end">
             <a class="navbar-brand" href="home.html">
-                <img id="top_bar_logo_image" src="assets/imagens/cybers_logo.svg" alt="Logo da equipe Cyber-S Senai" style="width: 45%; height: 45%;"  />
+                <img class="w-25" id="top_bar_logo_image" src="assets/imagens/cybers_logo.svg" alt="Logo da equipe Cyber-S Senai" />
             </a>
         </li>
         <!-- Equipes -->
-        <li class="col-6 p-0 d-flex">
+        <li class="col-6 p-0 d-flex align-items-end">
             <div class="dropdown col-4">
                 <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Equipes
@@ -38,10 +38,25 @@
                 </ul>
             </div>
         </li>
-        <li class="col-3">
-            <div class="bi bi-facebook"></div>
-            <div class="bi bi-instagram"></div>
-            <div class="bi bi-tiktok"></div>
+        <li class="col-3 d-inline-flex align-items-end">
+            <!-- Tik Tok -->
+            <div class="col-4 p-4">
+                <a href="https://www.tiktok.com/@cybersenai" target="_blank">
+                    <svg class="w-75" viewBox="0 0 24 24"><path fill="currentColor" d="M12.525.02c1.31-.02 2.61-.01 3.91-.02c.08 1.53.63 3.09 1.75 4.17c1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97c-.57-.26-1.1-.59-1.62-.93c-.01 2.92.01 5.84-.02 8.75c-.08 1.4-.54 2.79-1.35 3.94c-1.31 1.92-3.58 3.17-5.91 3.21c-1.43.08-2.86-.31-4.08-1.03c-2.02-1.19-3.44-3.37-3.65-5.71c-.02-.5-.03-1-.01-1.49c.18-1.9 1.12-3.72 2.58-4.96c1.66-1.44 3.98-2.13 6.15-1.72c.02 1.48-.04 2.96-.04 4.44c-.99-.32-2.15-.23-3.02.37c-.63.41-1.11 1.04-1.36 1.75c-.21.51-.15 1.07-.14 1.61c.24 1.64 1.82 3.02 3.5 2.87c1.12-.01 2.19-.66 2.77-1.61c.19-.33.4-.67.41-1.06c.1-1.79.06-3.57.07-5.36c.01-4.03-.01-8.05.02-12.07z"/></svg>
+                </a>
+            </div>
+            <!-- Instagram -->
+            <div class="col-4 p-4">
+                <a href="https://www.instagram.com/cybersenai/" target="_blank">
+                    <svg class="w-75" viewBox="0 0 20 20"><path fill="currentColor" d="M14.52,2.469H5.482c-1.664,0-3.013,1.349-3.013,3.013v9.038c0,1.662,1.349,3.012,3.013,3.012h9.038c1.662,0,3.012-1.35,3.012-3.012V5.482C17.531,3.818,16.182,2.469,14.52,2.469 M13.012,4.729h2.26v2.259h-2.26V4.729z M10,6.988c1.664,0,3.012,1.349,3.012,3.012c0,1.664-1.348,3.013-3.012,3.013c-1.664,0-3.012-1.349-3.012-3.013C6.988,8.336,8.336,6.988,10,6.988 M16.025,14.52c0,0.831-0.676,1.506-1.506,1.506H5.482c-0.831,0-1.507-0.675-1.507-1.506V9.247h1.583C5.516,9.494,5.482,9.743,5.482,10c0,2.497,2.023,4.52,4.518,4.52c2.494,0,4.52-2.022,4.52-4.52c0-0.257-0.035-0.506-0.076-0.753h1.582V14.52z"></path></svg>
+                </a>
+            </div>
+            <!-- Facebook -->
+            <div class="col-4 p-4">
+                <a href="https://www.facebook.com/cybersenai" target="_blank">
+                    <svg class="w-75" viewBox="0 0 20 20"><path fill="currentColor" d="M11.344,5.71c0-0.73,0.074-1.122,1.199-1.122h1.502V1.871h-2.404c-2.886,0-3.903,1.36-3.903,3.646v1.765h-1.8V10h1.8v8.128h3.601V10h2.403l0.32-2.718h-2.724L11.344,5.71z"></path></svg>
+                </a>
+            </div>
         </li>
     </ul>
 </nav>
