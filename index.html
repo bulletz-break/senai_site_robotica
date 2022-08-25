@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"/> -->
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="assets/css/default.css"/>
+    <link rel="stylesheet" href="assets/css/top_bar.css"/>
+    <script src="assets/js/default.js"></script>
+    <title> Cyber-S - Senai Santos Dumont </title>
+</head>
+
+<body>
+    <header id="page_header"></header>
+
+    <main id="page_content">
+        <!-- Banner -->
+        <section id="home_banner">
+            <!-- Vídeo de fundo -->
+            <div style="border: 1px solid black; width: 100%; height: 768px;" id="home_banner_background">
+                <!-- Alerta sobre bugs com a aba anônima -->
+                <div class="alert alert-warning position-sticky top-0" id="home_banner_video_alert" style="z-index: 99;">
+                    <p class="fs-5">
+                        Alguns navegadores no proibem o autoplay do vídeo. &nbsp; 
+                        <span class="btn btn-warning" id="home_banner_video_alert_btn_ok">
+                            Ok
+                        </span>
+                        <script>
+                            document.querySelector('#home_banner_video_alert_btn_ok').addEventListener('click', () => {
+                                document.querySelector('#home_banner_background').removeChild(document.querySelector('#home_banner_video_alert'));
+                                document.querySelector('#home_banner_video').play()
+                            });
+                        </script>
+                    </p>
+                </div>
+                <div class="h-100">
+                    <video class="h-100" id="home_banner_video" autoplay>
+                        <source src="assets/videos/video.mp4" type="video/mp4">
+                        <source src="assets/videos/video.mp4" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="page_footer"></footer>
+</body>
+</html>
