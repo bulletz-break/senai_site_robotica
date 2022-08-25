@@ -34,7 +34,7 @@ window.addEventListener('load', () => {
     let home_page_footer = document.querySelector('#page_footer');
 
     // Carregando conteúdo padrão
-    $().content_load('sections/header/top_bar.html', home_page_header);
+    $().content_load('./sections/header/top_bar.html', home_page_header);
     $().content_load('sections/footer/rodape.html', home_page_footer);
     // $().content_load('equipe/organizacao-e-metodo.html');
 });
