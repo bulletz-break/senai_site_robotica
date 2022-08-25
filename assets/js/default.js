@@ -1,7 +1,7 @@
 let $_content_already_loaded = true;
 
 function $() {
-
+    // Carregar arquivo dinamicamente
     function content_load($_load_file, $_load_elmnt_replace) {
         // Esperar até que o carregamento anterior termine
         if(!$_content_already_loaded) return setTimeout(() => { content_load($_load_file, $_load_elmnt_replace); }, 0);
@@ -14,10 +14,10 @@ function $() {
         return true;
     }
 
+    // Tratando a resposta
     function content_loaded($_cnt_loaded_request, $_loaded_elmnt_replace = false) {
         if(!$_loaded_elmnt_replace) $_loaded_elmnt_replace = document.querySelector('#page_content');
 
-        console.log($_cnt_loaded_request);
         $_loaded_elmnt_replace.innerHTML = $_cnt_loaded_request.responseText;
         $_content_already_loaded = true;
         return true;
