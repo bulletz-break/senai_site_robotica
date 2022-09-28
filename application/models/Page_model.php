@@ -85,7 +85,7 @@ class Page_model extends CI_Model {
      * 
      * Esta função recebe o tipo de conteúdo e o nome do arquivo em que está e o adiciona na estrutura da página em forma de string
      */
-    public function append($append, $file, $path = FALSE, $props = FALSE) {
+    public function append($append, $file, $path = FALSE, $props = []) {
         $props_string = '';
         // Adicionando o conteúdo
         switch($append) {
@@ -94,7 +94,7 @@ class Page_model extends CI_Model {
                 break;
             }
             case 'js': {
-                if($props !== FALSE)
+                if(sizeof($props) > 0)
                     foreach($props as $k => $v)
                         $props_string .= $k.'="'.$v.'"';
 

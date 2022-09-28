@@ -25,16 +25,16 @@
                 </button>
                 <ul class="dropdown-menu row">
                     <li>
-                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/organizacao')?>"> Organização e Método </button>
+                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/organizacao')?>"> Organização e Método </a>
                     </li>
                     <li>
-                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/engenharia')?>"> Engenharia </button>
+                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/engenharia')?>"> Engenharia </a>
                     </li>
                     <li>
-                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/merito')?>"> Mérito Científico </button>
+                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/merito')?>"> Mérito Científico </a>
                     </li>
                     <li>
-                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/tecnico')?>"> Técnico </button>
+                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/tecnico-e-mentores')?>"> Técnico e Mentores </a>
                     </li>
                 </ul>
             </div>
@@ -44,7 +44,7 @@
                 </button>
                 <ul class="dropdown-menu row justify-content-center align-items-center">
                     <li>
-                        <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/')?>"> Audaz Global </button>
+                        <a class="dropdown-item text-dark" href="<?=base_url('app/patrocinador/audaz')?>"> Audaz Global </a>
                     </li>
                 </ul>
             </div>
