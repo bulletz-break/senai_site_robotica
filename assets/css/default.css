@@ -11,11 +11,9 @@
     --max-width-screen: 1700px;
 }
 
-#header {
-    background-color: gray;
-}
-
 body { overflow-x: hidden; }
+
+main { margin-bottom: 10%; }
 
 /* Listas */
 ul { list-style: none; }

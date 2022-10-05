@@ -87,7 +87,7 @@ class App extends CI_Controller {
                 ]
             ],
             'tecnico-e-mentores' => [
-                'titulo' => 'Professor responsável - Técnico',
+                'titulo' => 'Professor responsável e Mentores',
                 'integrantes' => [
                     [
                         'label' => 'chicao',
@@ -122,9 +122,26 @@ class App extends CI_Controller {
     }
 
     public function doc($team) {
+        $documentacao = [
+            'organizacao'   => [
+                'title'     => 'Organização e Método',
+                'url'       => base_url('assets/documentacao/organizacao/'),
+                'file'      => 'organizacao.htm',
+                'download'  => 'organizacao.docx'
+            ],
+            'merito'        => [
+                'title'     => 'Mérito Científico',
+                'url'       => base_url('assets/documentacao/merito/'),
+                'file'      => 'merito.htm',
+                'download'  => 'merito.docx'
+            ]
+        ];
+
         $this->Page->append('header', $this->load->view('header/top_bar', [], TRUE)); // Carregando menu de navegação principal
 
-        $this->Page->append('main', $this->load->view('content/documentacao', [], TRUE)); // Carregando conteúdo da página inicial
+        $this->Page->append('main', $this->load->view('content/documentacao', [
+            'doc' => $documentacao[$team]
+        ], TRUE)); // Carregando conteúdo da página inicial
 
         $this->Page->append('footer', $this->load->view('footer/rodape', [], TRUE)); // Carregando rodapé
 
