@@ -112,12 +112,23 @@ class App extends CI_Controller {
         $this->Page->append('header', $this->load->view('header/top_bar', [], TRUE));
 
         $this->Page->append('main', $this->load->view('content/equipe', [ // Carregando página de exibição dos integrantes da equipe
-            'equipe' => $equipes[$team] // Carregando dados dos integrantes de acordo com a equipe
+            'equipe' => $equipes[$team], // Carregando dados dos integrantes de acordo com a equipe
+            'team' => $team
         ], TRUE));
         
         $this->Page->append('footer', $this->load->view('footer/rodape', [], TRUE));
 
         $this->load->view('page', ['page' => $this->Page->build()]);
+    }
+
+    public function doc($team) {
+        $this->Page->append('header', $this->load->view('header/top_bar', [], TRUE)); // Carregando menu de navegação principal
+
+        $this->Page->append('main', $this->load->view('content/documentacao', [], TRUE)); // Carregando conteúdo da página inicial
+
+        $this->Page->append('footer', $this->load->view('footer/rodape', [], TRUE)); // Carregando rodapé
+
+        $this->load->view('page', ['page' => $this->Page->build()]); // Mostrando a página
     }
 
     public function patrocinador($patrocinio) {
@@ -127,5 +138,17 @@ class App extends CI_Controller {
                 ''
             ]
         ];
+
+        $this->Page->append('header', $this->load->view('header/top_bar', [], TRUE)); // Carregando menu de navegação principal
+
+        $this->Page->append('main', $this->load->view('content/patrocinadores', [
+            'patrocinadores' => [
+                'audaz' => $patrocinadores['audaz']
+            ]
+        ], TRUE));
+
+        $this->Page->append('footer', $this->load->view('footer/rodape', [], TRUE)); // Carregando rodapé
+
+        $this->load->view('page', ['page' => $this->Page->build()]); // Mostrando a página
     }
 }

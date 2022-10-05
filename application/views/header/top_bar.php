@@ -60,16 +60,13 @@
                             </button>
                             <ul class="dropdown-menu row">
                                 <li>
-                                    <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/')?>"> Organização e Método </button>
+                                    <a class="dropdown-item text-dark" href="<?=base_url('app/doc/organizacao-e-metodo')?>"> Organização e Método </button>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/')?>"> Engenharia </button>
+                                    <a class="dropdown-item text-dark" href="<?=base_url('app/doc/engenharia')?>"> Engenharia </button>
                                 </li>
                                 <li>
-                                    <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/')?>"> Mérito Científico </button>
-                                </li>
-                                <li>
-                                    <a class="dropdown-item text-dark" href="<?=base_url('app/equipe/')?>"> Técnico </button>
+                                    <a class="dropdown-item text-dark" href="<?=base_url('app/doc/merito')?>"> Mérito Científico </button>
                                 </li>
                             </ul>
                         </li>

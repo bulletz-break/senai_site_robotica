@@ -2,15 +2,7 @@
     <!-- Banner -->
     <section class="position-relative" id="home_banner">
         <!-- Vídeo de fundo -->
-        <div style="width: 100%; height: 768px; opacity: .8;" id="home_banner_background">
-            <div class="h-100">
-                <video class="h-100" id="home_banner_video" autoplay>
-                    <source src="<?=base_url('assets/videos/video.mp4')?>" type="video/mp4">
-                    <source src="<?=base_url('assets/videos/video.mp4')?>" type="video/ogg">
-                    Seu navegador de pobre não roda vídeo
-                </video>
-            </div>
-        </div>
+        <div class="bg-dark" style="width: 100%; height: 768px; opacity: .9;" id="home_banner_background"></div>
         <!-- Conteúdo a frente do vídeo -->
         <div class="position-absolute top-50 w-100 row" id="home_banner_content" style="z-index: 99;">
             <!-- Na mesma linha -->
